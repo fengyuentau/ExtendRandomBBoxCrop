@@ -1,2 +1,13 @@
+# vscode
 .vscode/
+
+# python cache
+*.pyc
+**/__pycache__
+**/__pycache__/**
+
+# jupyer notebook
+**/.ipynb_checkpoints/
+**/.ipynb_checkpoints/**
+
 build/
