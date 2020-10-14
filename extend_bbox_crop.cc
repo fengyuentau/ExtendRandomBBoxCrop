@@ -176,7 +176,7 @@ and the second dimension refers to the index of the coordinate.)code")
 associated with each of the bounding boxes.)code")
     .NumOutput(4)  // [anchor, shape, bboxes, landmarks, labels (optional),]
     .AdditionalOutputsFn([](const OpSpec &spec) {
-      return spec.NumRegularInput() - 1;  // +1 if labels are provided
+      return spec.NumRegularInput() - 2;  // +1 if labels are provided
     })
     .AddOptionalArg(
         "thresholds",
